@@ -22,3 +22,22 @@ function getValue(myVal:number) {
 }
 
 // SOLUTION: it will be discussed later !!!
+
+
+// PROBLEM: how we can assign type to arrow functions??
+const getHello = (s: string): string  => {
+    return ""
+}
+
+
+const heros = ["thor", "spiderman", "ironman"]
+//const heros = [1, 2, 3]
+
+
+heros.map((hero): string => {
+    return `hero is ${hero}`
+    //return 1  
+})
+
+//Typescript automatically gets what type of array is present when it is string, it assign hero as string and in case of number, it assign heros to number type
+// You should be very careful about the type of map
