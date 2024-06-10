@@ -41,3 +41,16 @@ heros.map((hero): string => {
 
 //Typescript automatically gets what type of array is present when it is string, it assign hero as string and in case of number, it assign heros to number type
 // You should be very careful about the type of map
+
+
+function consoleError(errmsg:string):void {
+    console.log(errmsg);
+}
+
+//Here, not providing the type of function is not a good practise.
+
+function handleError(errmsg:string):never {
+    throw new Error(errmsg);
+}
+
+// this function never returns any value
