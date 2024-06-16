@@ -26,4 +26,6 @@ const avani: User = {dbId: 11 ,email:"avani@xy.com", userId: 1103,
 
 avani.email = "a@a.com"
 
+export {}
+
 // here the function parameter name not neccessarily have to match with function argument name.

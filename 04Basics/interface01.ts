@@ -34,14 +34,15 @@ const avani1: User1 = {dbId: 11 ,email:"avani@xy.com", userId: 1103,
 
 // We can also extend one interface to another
 
-interface Admin extends User {
+interface Admin extends User1 {
     role: "admin" | "ta" | "learner"
 }
 
 const kartikey: Admin = {
-    dbId: 88,
+    dbId: 82,
     email: "k@k.com",
     userId: 1234,
+    githubToken: "kart004",
     startTrial() {
         return "kartikey garg"
     },
@@ -50,6 +51,8 @@ const kartikey: Admin = {
     },
     role: "admin"
 }
+
+export {}
 
 
 
