@@ -32,3 +32,5 @@ class YouTube implements TakePhoto, Story{
         console.log("Story Created");
     }
 }
+
+export{}
